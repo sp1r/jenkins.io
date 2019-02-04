@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Jenkins Community Blog
+</title>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="Jenkins is an open source automation server" name="description">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/sites/default/files/jenkins_favicon.ico" rel="shortcut icon" type="image/x-icon">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="ie=edge" http-equiv="x-ua-compatible">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/img/favicon.ico" rel="icon" sizes="32x32" type="img/png">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/img/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/img/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/img/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/img/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/img/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+<meta content="Jenkins Community Blog" name="apple-mobile-web-app-title">
+<!-- Twitter Card data -->
+<meta content="summary_large_image" name="twitter:card">
+<meta content="@JenkinsCI" name="twitter:site">
+<meta content="Jenkins Community Blog" name="twitter:title">
+<meta content="Jenkins – an open source automation server which enables developers around the world to reliably build, test, and deploy their software." name="twitter:description">
+<meta content="@JenkinsCI" name="twitter:creator">
+<!-- Twitter Summary card images must be at least 120x120px -->
+<!-- Open Graph data -->
+<meta content="Jenkins Community Blog" property="og:title">
+<meta content="article" property="og:type">
+<meta content="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/page/4.html" property="og:url">
+<meta content="Jenkins – an open source automation server which enables developers around the world to reliably build, test, and deploy their software." name="og:description">
+<meta content="Jenkins Community Blog" property="og:site_name">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/assets/bower/bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/assets/bower/tether/css/tether.min.css" media="screen" rel="stylesheet">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/css/font-icons.css" media="screen" rel="stylesheet">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/css/jenkins.css" media="screen" rel="stylesheet">
+<!-- Non-obtrusive CSS styles -->
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/assets/bower/ionicons/css/ionicons.min.css" media="screen" rel="stylesheet">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/css/footer.css" media="screen" rel="stylesheet">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/css/font-awesome.min.css" media="screen" rel="stylesheet">
+</head>
+<body>
+<script src="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/assets/bower/jquery/jquery.js"></script>
+<!-- starting partial toptoolbar.html.haml -->
+<nav class="navbar navbar-expand-md navbar-dark top bg-dark fixed-top" id="ji-toolbar">
+<a class="navbar-brand" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list">
+Jenkins
+</a>
+<button class="navbar-toggler" data-target="#CollapsingNavbar" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="CollapsingNavbar">
+<ul class="nav navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node">
+Blog
+</a>
+</li>
+<li class="nav-item dropdown">
+<div aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">
+Documentation
+</div>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/doc">
+Use Jenkins
+</a>
+<a class="dropdown-item" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/doc/developer">
+Extend Jenkins
+</a>
+<span class="dropdown-item">
+<strong>
+Use-cases
+</strong>
+</span>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/android">
+&nbsp;-&nbsp;Android
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/c">
+&nbsp;-&nbsp;C/C++
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/docker">
+&nbsp;-&nbsp;Docker
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/embedded">
+&nbsp;-&nbsp;Embedded
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/github">
+&nbsp;-&nbsp;GitHub
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/java">
+&nbsp;-&nbsp;Java
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/php">
+&nbsp;-&nbsp;PHP
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/pipeline">
+&nbsp;-&nbsp;Continuous Delivery
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/python">
+&nbsp;-&nbsp;Python
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/ruby">
+&nbsp;-&nbsp;Ruby
+</a>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://plugins.jenkins.io/">
+Plugins
+</a>
+</li>
+<li class="nav-item dropdown">
+<div aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">
+Community
+</div>
+<div class="dropdown-menu">
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/participate">
+Overview
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/chat" title="Chat with the rest of the Jenkins community on IRC">
+Chat
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/projects/jam">
+Meet
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/events">
+Events
+</a>
+<a class="dropdown-item feature" href="https://issues.jenkins-ci.org/">
+Issue Tracker
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/mailing-lists" title="Browse Jenkins mailing list archives and/or subscribe to lists">
+Mailing Lists
+</a>
+<a class="dropdown-item feature" href="https://wiki.jenkins.io/">
+Wiki
+</a>
+<a class="dropdown-item feature" href="https://accounts.jenkins.io/" title="Create/manage your account for accessing wiki, issue tracker, etc">
+Account Management
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/sigs/">
+<strong>
+Special Interest Groups
+</strong>
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/sigs/advocacy-and-outreach/">
+&nbsp;-&nbsp;Advocacy and Outreach
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/sigs/chinese-localization/">
+&nbsp;-&nbsp;Chinese Localization
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/sigs/cloud-native/">
+&nbsp;-&nbsp;Cloud Native
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/sigs/gsoc/">
+&nbsp;-&nbsp;Google Summer of Code
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/sigs/hw-and-eda/">
+&nbsp;-&nbsp;Hardware and EDA
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/sigs/mailing-lists/">
+&nbsp;-&nbsp;Jenkins Special Interest Groups
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/sigs/pipeline-authoring/">
+&nbsp;-&nbsp;Pipeline Authoring
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/sigs/platform/">
+&nbsp;-&nbsp;Platform
+</a>
+</div>
+</li>
+<li class="dropdown nav-item">
+<div aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">Sub-projects</div>
+<div class="dropdown-menu">
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/projects/">
+Overview
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/projects/blueocean/">
+Blue Ocean
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/projects/evergreen/">
+Evergreen
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/projects/gsoc/">
+Google Summer of Code in Jenkins
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/projects/infrastructure/">
+Infrastructure
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/projects/jam/">
+Jenkins Area Meetups
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/projects/jcasc/">
+Jenkins Configuration as Code
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/projects/jenkins-x/">
+Jenkins X
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/projects/remoting/">
+Jenkins Remoting
+</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<div aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">
+About
+</div>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/security">
+Security
+</a>
+<a class="dropdown-item" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/press">
+Press
+</a>
+<a class="dropdown-item" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/awards">
+Awards
+</a>
+<a class="dropdown-item" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/project/conduct">
+Conduct
+</a>
+<a class="dropdown-item" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/artwork">
+Artwork
+</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<div aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">
+English
+</div>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/zh">
+中文 Chinese
+</a>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link btn btn-outline-secondary" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/download">
+Download
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Spacing to make the fixed-top sticky navbar not occlude any content below it -->
+<div class="pt-4">
+&nbsp;
+</div>
+
+<!-- ending partial toptoolbar.html.haml -->
+<div class="container blog-post">
+<div class="row body">
+<div class="col-md-8 main-content with-sidebar" id="content">
+<div id="content-top">
+<h2>
+Jenkins Community Blog
+</h2>
+</div>
+<div class="blogintro">
+The Jenkins project has a lot going on between core/plugin development,
+events and other open source automation related activities. To keep up with
+it subscribe to our
+<a href="https://feeds.feedburner.com/ContinuousBlog/">
+RSS feed
+</a>
+or
+<a href="https://twitter.com/jenkinsci">
+follow us on Twitter
+</a>
+</div>
+<!-- starting partial blogcardlist.html.haml -->
+<div class="content blog-posts">
+<div class="item-list">
+<ul class="ji-blog-list ji-item-list">
+<li class="post">
+<a class="body" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/blog/2018/09/14/speaker-blog-jenkins-builds-jenkins/">
+<div class="header">
+<div class="date">
+<div class="month">
+Sep
+</div>
+<div class="day">
+14
+</div>
+</div>
+<h5 class="title">
+Want to know how Jenkins builds Jenkins? Catch this session at DevOps World | Jenkins World next week in San Francisco!
+</h5>
+</div>
+<p class="teaser">
+Next week Olivier Vernin from CloudBees and Brian Benz from Microsoft will be presenting a session at DevOps World | Jenkins World about how Microsoft has been working with Jenkins to build Jenkins plugins and produce Jenkins on Microsoft Azure.
+These plugins run Jenkins on Azure Linux and Windows VMs, Kubernetes, azure App service, as well as deploy artifacts to those Azure platforms and more.
+All...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/olblak">Olivier Vernin</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/jenkinsworld">
+jenkinsworld
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/jenkinsworld2018">
+jenkinsworld2018
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/azure">
+azure
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/infrastructure">
+infrastructure
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/blog/2018/09/14/kubernetes-and-secret-agents/">
+<div class="header">
+<div class="date">
+<div class="month">
+Sep
+</div>
+<div class="day">
+14
+</div>
+</div>
+<h5 class="title">
+Jenkins and Kubernetes - Secret Agents in the Clouds
+</h5>
+</div>
+<p class="teaser">
+This is a guest post by DevOps World | Jenkins World speaker
+Mandy Hubbard.
+
+
+
+
+
+
+
+
+
+
+At long last, the way we build and deploy software is finally changing and significantly so.
+The days of the persnickety, prima donna build machine where monolithic applications were built, tested, and deployed are numbered.
+And that is a "Good Thing (tm)" - a consequence of how we will meet the transformation goals of...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/DevMandy">Mandy Hubbard</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/jenkinsworld">
+jenkinsworld
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/jenkinsworld2018">
+jenkinsworld2018
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/cloud-native">
+cloud-native
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/kubernetes">
+kubernetes
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/blog/2018/09/13/speaker-blog-evergreen-safely-upgrading/">
+<div class="header">
+<div class="date">
+<div class="month">
+Sep
+</div>
+<div class="day">
+13
+</div>
+</div>
+<h5 class="title">
+Speaker blogpost: Jenkins Evergreen At DevOps World | Jenkins World 2018
+</h5>
+</div>
+<p class="teaser">
+Evergreen is a distribution of Jenkins we are working on that provides an easy to use and automatically upgrading experience.
+This year at the conference, there will be not just one, but two talks to present Evergreen to the Jenkins community:
+
+
+
+
+Continuously Delivering an Easy-to-Use Jenkins with Jenkins Evergreen, by R. Tyler Croy.
+
+
+Safely Upgrading Jenkins Every Single Day, by Baptiste Mathus.
+
+
+
+
+Tyler will present the overall Jenkins...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/batmat">Baptiste Mathus</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/jenkinsworld">
+jenkinsworld
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/jenkinsworld2018">
+jenkinsworld2018
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/evergreen">
+evergreen
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/blog/2018/09/12/speaker-blog-a-cloud-native-jenkins/">
+<div class="header">
+<div class="date">
+<div class="month">
+Sep
+</div>
+<div class="day">
+12
+</div>
+</div>
+<h5 class="title">
+Speaker blogpost: A Cloud Native Jenkins
+</h5>
+</div>
+<p class="teaser">
+A few months ago I published a
+blog post about
+Cloud Native Special Interest Group (SIG)
+and ongoing projects related to Cloud Native Jenkins.
+Next week we will be presenting at DevOps World | Jenkins World together with Carlos Sanchez and Jesse Glick,
+so I would like to provide a heads up for
+our talk: “A Cloud Native Jenkins”.
+
+
+In our talk, we will focus on the following topics: Pluggable Storage,
+our...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/oleg-nenashev">Oleg Nenashev</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/jenkinsworld">
+jenkinsworld
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/jenkinsworld2018">
+jenkinsworld2018
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/cloud-native">
+cloud-native
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/pluggable-storage">
+pluggable-storage
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/jenkinsfile-runner">
+jenkinsfile-runner
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/blog/2018/09/12/2018-community-survey/">
+<div class="header">
+<div class="date">
+<div class="month">
+Sep
+</div>
+<div class="day">
+12
+</div>
+</div>
+<h5 class="title">
+2018 DevOps|Jenkins Community Survey Now Open
+</h5>
+</div>
+<p class="teaser">
+This is a guest post by Brian
+Dawson on behalf of CloudBees, where he works as a DevOps Evangelist
+responsible for developing and sharing continuous delivery and DevOps best
+practices. He also serves as the CloudBees Product Marketing Manager for
+Jenkins.
+
+
+
+
+
+Take the 5th Annual DevOps and Jenkins Community Survey
+
+
+With DevOps World | Jenkins World San Francisco right around the corner, CloudBees is excited to sponsor the 2018 DevOps...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/bvdawson">Brian Dawson</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/jenkins">
+jenkins
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/devops">
+devops
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/jenkinsworld2018">
+jenkinsworld2018
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/blog/2018/09/11/speaker-blog-warnings-plugin/">
+<div class="header">
+<div class="date">
+<div class="month">
+Sep
+</div>
+<div class="day">
+11
+</div>
+</div>
+<h5 class="title">
+Warnings Plugin 5.0 (White Mountain) Public Beta
+</h5>
+</div>
+<p class="teaser">
+This is a guest post by Ullrich Hafner, professor for Software Engineering at the University of Applied Sciences Munich and Jenkins contributor.
+He will be presenting Static Analysis Plugins - White Mountain Release for Pipelines at DevOps World | Jenkins World 2018.
+
+
+
+
+
+
+
+
+
+
+Jenkins' Warnings plugin collects compiler warnings or issues reported by static analysis tools and visualizes the
+results. The plugin (and the associated static analysis plugin...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+uhafner
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/warnings">
+warnings
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/jenkinsworld">
+jenkinsworld
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/jenkinsworld2018">
+jenkinsworld2018
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/blog/2018/09/10/scaling-network-connections/">
+<div class="header">
+<div class="date">
+<div class="month">
+Sep
+</div>
+<div class="day">
+10
+</div>
+</div>
+<h5 class="title">
+Scaling Network Connections from the Jenkins Master
+</h5>
+</div>
+<p class="teaser">
+Oleg Nenashev and I will be speaking at DevOps World | Jenkins World in San Francisco this year about
+Scaling Network Connections from the Jenkins Master.
+Over the years there have been many efforts to analyze, optimize, and fortify the “Remoting channel”
+that allows a master to orchestrate agent activity and receive build results.
+Techniques such as tuning the agent launcher can improve service,
+but qualitative change can only...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/jglick">Jesse Glick</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/jenkinsworld">
+jenkinsworld
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/jenkinsworld2018">
+jenkinsworld2018
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/cloud-native">
+cloud-native
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/performance">
+performance
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/scalability">
+scalability
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/remoting">
+remoting
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/blog/2018/08/31/shifting-gears/">
+<div class="header">
+<div class="date">
+<div class="month">
+Aug
+</div>
+<div class="day">
+31
+</div>
+</div>
+<h5 class="title">
+Jenkins: Shifting Gears
+</h5>
+</div>
+<p class="teaser">
+Kohsuke here. This is a message for my fellow Jenkins developers.
+
+
+Jenkins has been on an amazing run, but I believe we are trapped in a local optimum, and losing appeal to people who fall outside of our traditional sweet spot.
+We need to take on new efforts to solve this. One is “cloud native Jenkins” that creates a flavor of Jenkins that runs well on...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/kohsuke">Kohsuke Kawaguchi</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/development">
+development
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/core">
+core
+</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<!-- ending partial blogcardlist.html.haml -->
+<div>
+<nav>
+<ul class="pagination">
+<li class='47166414094860: 47166417631980: 47166426911400: 47166427597220: 47166428206940: 47166428798140: 47166429366600: 47166430064520: :change_frequency=&gt;"never", :lastmod=&gt;"2019-02-04", :layout=&gt;"default", :paginate_generated=&gt;true, :posts=&gt;[Awestruct::Page{ :priority=&gt;0.1, :section=&gt;"blog", :selected_tag=&gt;nil, :title=&gt;"Jenkins :url=&gt;"/node/page/3.html"} Awestruct::Page{ Blog", Community layout=&gt;post output_path=&gt;/blog/2018/09/17/jenkins-artwork/index.html, output_path=&gt;/blog/2018/09/18/automatically-upgrading-with-evergreen/index.html, output_path=&gt;/blog/2018/10/01/hacktoberfest/index.html, output_path=&gt;/blog/2018/10/09/telemetry/index.html, output_path=&gt;/blog/2018/10/10/security-updates/index.html, output_path=&gt;/blog/2018/10/12/hackathons-in-october/index.html, output_path=&gt;/blog/2018/10/14/gsoc2018-results/index.html, output_path=&gt;/blog/2018/10/16/custom-war-packager/index.html, page-item source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2018/09/2018-09-17-jenkins-artwork.adoc, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2018/09/2018-09-18-automatically-upgrading-with-evergreen.adoc, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2018/10/2018-10-01-hacktoberfest.adoc, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2018/10/2018-10-09-telemetry.adoc, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2018/10/2018-10-10-security-updates.adoc, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2018/10/2018-10-12-hackathons-in-october.adoc, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2018/10/2018-10-14-gsoc2018-results.adoc, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2018/10/2018-10-16-custom-war-packager.adoc, {:__is_layout=&gt;false, }, }],'>
+<a class="page-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/page/3.html">
+&laquo;
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="..">
+1
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../page/2.html">
+2
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../page/3.html">
+3
+</a>
+</li>
+<li class="active page-item">
+<a class="page-link" href="../page/4.html">
+4
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../page/5.html">
+5
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../page/6.html">
+6
+</a>
+</li>
+<li class="page-item disabled">
+<a class="page-link" href="#">
+...
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../page/79.html">
+79
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../page/80.html">
+80
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../page/81.html">
+81
+</a>
+</li>
+<li class='47166413797860: 47166417280420: 47166418684640: 47166427453840: 47166428022480: 47166428633540: 47166429259080: 47166429878940: :change_frequency=&gt;"never", :lastmod=&gt;"2019-02-04", :layout=&gt;"default", :paginate_generated=&gt;true, :posts=&gt;[Awestruct::Page{ :priority=&gt;0.1, :section=&gt;"blog", :selected_tag=&gt;nil, :title=&gt;"Jenkins :url=&gt;"/node/page/5.html"} Awestruct::Page{ Blog", Community layout=&gt;post output_path=&gt;/blog/2018/08/15/security-updates/index.html, output_path=&gt;/blog/2018/08/16/dwjw-2018-is-almost-here/index.html, output_path=&gt;/blog/2018/08/17/code-coverage-api-plugin-1/index.html, output_path=&gt;/blog/2018/08/17/speaker-blog-brent-laster/index.html, output_path=&gt;/blog/2018/08/21/contributor-summit-nice/index.html, output_path=&gt;/blog/2018/08/23/speaker-blog-casc-part-1/index.html, output_path=&gt;/blog/2018/08/29/day-of-jenkins-and-other-chances-to-meet-jcasc/index.html, output_path=&gt;/blog/2018/08/30/speaker-blog-kubernetes-plugin/index.html, page-item source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2018/08/2018-08-15-security-updates.adoc, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2018/08/2018-08-16-dwjw-2018-is-almost-here.adoc, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2018/08/2018-08-17-code-coverage-api-plugin-1.0-release.adoc, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2018/08/2018-08-17-speaker-blog-brent-laster.adoc, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2018/08/2018-08-21-contributor-summit-nice.adoc, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2018/08/2018-08-23-speaker-blog-casc-part-1.adoc, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2018/08/2018-08-29-day-of-jenkins-and-other-chances-to-meet-jcasc.adoc, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2018/08/2018-08-30-speaker-blog-kubernetes-plugin.adoc, {:__is_layout=&gt;false, }, }],'>
+<a class="page-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/page/5.html">
+&raquo;
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="col-md-4 events vertical">
+<div class="content">
+<!-- starting partial events.html.haml -->
+<div class="item-list">
+<ul class="ji-date-list ji-item-list">
+</ul>
+</div>
+
+<!-- ending partial events.html.haml -->
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/assets/bower/anchor-js/anchor.min.js"></script>
+<script src="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/assets/bower/tether/js/tether.min.js"></script>
+<script src="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/assets/bower/bootstrap/js/bootstrap.min.js"></script>
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+<p class="box">
+<a href="https://github.com/jenkins-infra/jenkins.io/edit/master/content//node/index.html.haml" title="Edit /node/index.html.haml on GitHub">
+Improve this page
+</a>
+|
+<a href="https://github.com/jenkins-infra/jenkins.io/commits/master/content//node/index.html.haml" title="View /node/index.html.haml history on GitHub">
+Page history
+</a>
+</p>
+<div class="license-box">
+<div id="creativecommons">
+<a href="https://creativecommons.org/licenses/by-sa/4.0/">
+<p>
+<img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png">
+</p>
+</a>
+<p>
+The content driving this site is licensed under the Creative
+Commons Attribution-ShareAlike 4.0 license.
+</p>
+</div>
+</div>
+</div>
+<div class="links col-md-8">
+<div class="container">
+<div class="row">
+<div class="area col-md-3">
+<div class="div-mar">
+<h5>Resources</h5>
+<ul class="resources">
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/events">
+Events
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/doc">
+Documentation
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node">
+Blog
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="area col-md-3">
+<div class="div-mar">
+<h5>Solutions</h5>
+<ul>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/android">
+Android
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/c">
+C/C++
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/docker">
+Docker
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/embedded">
+Embedded
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/github">
+GitHub
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/java">
+Java
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/php">
+PHP
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/pipeline">
+Continuous Delivery
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/python">
+Python
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/ruby">
+Ruby
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="area col-md-3">
+<div class="div-mar">
+<h5>Project</h5>
+<ul class="project">
+<li>
+<a href="https://issues.jenkins-ci.org">
+Issue tracker
+</a>
+</li>
+<li>
+<a href="https://wiki.jenkins.io">
+Wiki
+</a>
+</li>
+<li>
+<a href="https://github.com/jenkinsci">
+GitHub
+</a>
+</li>
+<li>
+<a href="https://ci.jenkins.io">
+Jenkins on Jenkins
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="area col-md-3">
+<div class="div-mar">
+<h5>Community</h5>
+<ul class="community">
+<li>
+<a href="https://groups.google.com/forum/#!forum/jenkinsci-users">
+Users mailing list
+</a>
+</li>
+<li>
+<a href="https://groups.google.com/forum/#!forum/jenkinsci-dev">
+Developers mailing list
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/sigs">
+Special Interest Groups
+</a>
+</li>
+<li>
+<a href="https://twitter.com/jenkinsci">
+Twitter
+</a>
+</li>
+<li>
+<a href="https://reddit.com/r/jenkinsci">
+Reddit
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/merchandise">
+Merchandise
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/awards">
+Awards
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+ga('create', 'UA-000000-0', 'auto');
+ga('send', 'pageview');
+ga('set', 'anonymizeIp', true);
+
+</script>
+
+<script>
+  !function(d,s,id) {
+    var js, fjs=d.getElementsByTagName(s)[0];
+    if (!d.getElementById(id)) {
+      js = d.createElement(s);
+      js.id=id;
+      js.src="//platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js,fjs);
+    }
+  }(document,"script","twitter-wjs");
+</script>
+</body>
+</html>

@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Jenkins Community Blog
+</title>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="Jenkins is an open source automation server" name="description">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/sites/default/files/jenkins_favicon.ico" rel="shortcut icon" type="image/x-icon">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="ie=edge" http-equiv="x-ua-compatible">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/img/favicon.ico" rel="icon" sizes="32x32" type="img/png">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/img/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/img/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/img/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/img/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/img/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+<meta content="Jenkins Community Blog" name="apple-mobile-web-app-title">
+<!-- Twitter Card data -->
+<meta content="summary_large_image" name="twitter:card">
+<meta content="@JenkinsCI" name="twitter:site">
+<meta content="Jenkins Community Blog" name="twitter:title">
+<meta content="Jenkins – an open source automation server which enables developers around the world to reliably build, test, and deploy their software." name="twitter:description">
+<meta content="@JenkinsCI" name="twitter:creator">
+<!-- Twitter Summary card images must be at least 120x120px -->
+<!-- Open Graph data -->
+<meta content="Jenkins Community Blog" property="og:title">
+<meta content="article" property="og:type">
+<meta content="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/plugins/page/6.html" property="og:url">
+<meta content="Jenkins – an open source automation server which enables developers around the world to reliably build, test, and deploy their software." name="og:description">
+<meta content="Jenkins Community Blog" property="og:site_name">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/assets/bower/bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/assets/bower/tether/css/tether.min.css" media="screen" rel="stylesheet">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/css/font-icons.css" media="screen" rel="stylesheet">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/css/jenkins.css" media="screen" rel="stylesheet">
+<!-- Non-obtrusive CSS styles -->
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/assets/bower/ionicons/css/ionicons.min.css" media="screen" rel="stylesheet">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/css/footer.css" media="screen" rel="stylesheet">
+<link href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/css/font-awesome.min.css" media="screen" rel="stylesheet">
+</head>
+<body>
+<script src="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/assets/bower/jquery/jquery.js"></script>
+<!-- starting partial toptoolbar.html.haml -->
+<nav class="navbar navbar-expand-md navbar-dark top bg-dark fixed-top" id="ji-toolbar">
+<a class="navbar-brand" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list">
+Jenkins
+</a>
+<button class="navbar-toggler" data-target="#CollapsingNavbar" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="CollapsingNavbar">
+<ul class="nav navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node">
+Blog
+</a>
+</li>
+<li class="nav-item dropdown">
+<div aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">
+Documentation
+</div>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/doc">
+Use Jenkins
+</a>
+<a class="dropdown-item" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/doc/developer">
+Extend Jenkins
+</a>
+<span class="dropdown-item">
+<strong>
+Use-cases
+</strong>
+</span>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/android">
+&nbsp;-&nbsp;Android
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/c">
+&nbsp;-&nbsp;C/C++
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/docker">
+&nbsp;-&nbsp;Docker
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/embedded">
+&nbsp;-&nbsp;Embedded
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/github">
+&nbsp;-&nbsp;GitHub
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/java">
+&nbsp;-&nbsp;Java
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/php">
+&nbsp;-&nbsp;PHP
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/pipeline">
+&nbsp;-&nbsp;Continuous Delivery
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/python">
+&nbsp;-&nbsp;Python
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/ruby">
+&nbsp;-&nbsp;Ruby
+</a>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://plugins.jenkins.io/">
+Plugins
+</a>
+</li>
+<li class="nav-item dropdown">
+<div aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">
+Community
+</div>
+<div class="dropdown-menu">
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/participate">
+Overview
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/chat" title="Chat with the rest of the Jenkins community on IRC">
+Chat
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/projects/jam">
+Meet
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/events">
+Events
+</a>
+<a class="dropdown-item feature" href="https://issues.jenkins-ci.org/">
+Issue Tracker
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/mailing-lists" title="Browse Jenkins mailing list archives and/or subscribe to lists">
+Mailing Lists
+</a>
+<a class="dropdown-item feature" href="https://wiki.jenkins.io/">
+Wiki
+</a>
+<a class="dropdown-item feature" href="https://accounts.jenkins.io/" title="Create/manage your account for accessing wiki, issue tracker, etc">
+Account Management
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/sigs/">
+<strong>
+Special Interest Groups
+</strong>
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/sigs/advocacy-and-outreach/">
+&nbsp;-&nbsp;Advocacy and Outreach
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/sigs/chinese-localization/">
+&nbsp;-&nbsp;Chinese Localization
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/sigs/cloud-native/">
+&nbsp;-&nbsp;Cloud Native
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/sigs/gsoc/">
+&nbsp;-&nbsp;Google Summer of Code
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/sigs/hw-and-eda/">
+&nbsp;-&nbsp;Hardware and EDA
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/sigs/mailing-lists/">
+&nbsp;-&nbsp;Jenkins Special Interest Groups
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/sigs/pipeline-authoring/">
+&nbsp;-&nbsp;Pipeline Authoring
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/sigs/platform/">
+&nbsp;-&nbsp;Platform
+</a>
+</div>
+</li>
+<li class="dropdown nav-item">
+<div aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">Sub-projects</div>
+<div class="dropdown-menu">
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/projects/">
+Overview
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/projects/blueocean/">
+Blue Ocean
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/projects/evergreen/">
+Evergreen
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/projects/gsoc/">
+Google Summer of Code in Jenkins
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/projects/infrastructure/">
+Infrastructure
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/projects/jam/">
+Jenkins Area Meetups
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/projects/jcasc/">
+Jenkins Configuration as Code
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/projects/jenkins-x/">
+Jenkins X
+</a>
+<a class="dropdown-item feature" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/projects/remoting/">
+Jenkins Remoting
+</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<div aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">
+About
+</div>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/security">
+Security
+</a>
+<a class="dropdown-item" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/press">
+Press
+</a>
+<a class="dropdown-item" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/awards">
+Awards
+</a>
+<a class="dropdown-item" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/project/conduct">
+Conduct
+</a>
+<a class="dropdown-item" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/artwork">
+Artwork
+</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<div aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button">
+English
+</div>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/zh">
+中文 Chinese
+</a>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link btn btn-outline-secondary" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/download">
+Download
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Spacing to make the fixed-top sticky navbar not occlude any content below it -->
+<div class="pt-4">
+&nbsp;
+</div>
+
+<!-- ending partial toptoolbar.html.haml -->
+<div class="container blog-post">
+<div class="row body">
+<div class="col-md-8 main-content with-sidebar" id="content">
+<div id="content-top">
+<h2>
+Jenkins Community Blog
+</h2>
+</div>
+<div class="blogintro">
+The Jenkins project has a lot going on between core/plugin development,
+events and other open source automation related activities. To keep up with
+it subscribe to our
+<a href="https://feeds.feedburner.com/ContinuousBlog/">
+RSS feed
+</a>
+or
+<a href="https://twitter.com/jenkinsci">
+follow us on Twitter
+</a>
+</div>
+<!-- starting partial blogcardlist.html.haml -->
+<div class="content blog-posts">
+<div class="item-list">
+<ul class="ji-blog-list ji-item-list">
+<li class="post">
+<a class="body" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/blog/2015/01/27/office-hours-tomorrow-workflow-security-model-and-plugin-compatibility/">
+<div class="header">
+<div class="date">
+<div class="month">
+Jan
+</div>
+<div class="day">
+27
+</div>
+</div>
+<h5 class="title">
+Office Hours tomorrow: workflow security model & plugin compatibility
+</h5>
+</div>
+<p class="teaser">
+In tomorrow's Jenkins office hours, Jesse Glick will talk about two topics in the workflow plugin that he has been asked about:
+
+
+Security model: script security, permissions
+Plugin compatibility: SimpleBuildStep and friends, custom steps, etc.
+
+
+
+The session should be interesting to anyone using workflow or thinking about using workflow. Jesse is one of the top contributors in the community, so it'd be definitely worth your time!...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/kohsuke">Kohsuke Kawaguchi</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/general">
+general
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/news">
+news
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/plugins">
+plugins
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/screencast">
+screencast
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/video">
+video
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/pipeline">
+pipeline
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/workflow">
+workflow
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/blog/2014/12/03/workflow-plugin-is-1-0/">
+<div class="header">
+<div class="date">
+<div class="month">
+Dec
+</div>
+<div class="day">
+03
+</div>
+</div>
+<h5 class="title">
+Workflow plugin is 1.0
+</h5>
+</div>
+<p class="teaser">
+Jenkins started with a notion of jobs and builds at heart. One script is one job, and as you repeatedly execute jobs, it creates builds as records. As the use case of Jenkins gets more sophisticated, people started combining jobs to orchestrate ever more complex activities.
+
+A number of plugins have been developed to enable all sorts of different ways to compose jobs, and many...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/kohsuke">Kohsuke Kawaguchi</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/development">
+development
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/plugins">
+plugins
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/pipeline">
+pipeline
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/workflow">
+workflow
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/blog/2014/10/06/gradle-fy-your-jenkins-plugin-project/">
+<div class="header">
+<div class="date">
+<div class="month">
+Oct
+</div>
+<div class="day">
+06
+</div>
+</div>
+<h5 class="title">
+Gradle-fy your Jenkins Plugin Project
+</h5>
+</div>
+<p class="teaser">
+(This is a guest post from Daniel Spilker)
+
+Jenkins supports building plugins using Gradle for a while now. Last week a new version of the Gradle JPI plugin has been released to iron out some issues.
+
+The Gradle JPI plugin enables a 100% groovy plugin development environment with Groovy as primary programming language, Spock for writing tests and Gradle as build system. Have a look at...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/kohsuke">Kohsuke Kawaguchi</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/general">
+general
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/guest post">
+guest post
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/plugins">
+plugins
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/blog/2014/08/28/workflow-plugin-code-walk-through/">
+<div class="header">
+<div class="date">
+<div class="month">
+Aug
+</div>
+<div class="day">
+28
+</div>
+</div>
+<h5 class="title">
+Workflow plugin code walk-through
+</h5>
+</div>
+<p class="teaser">
+Jesse and I will walk through the source code of the workflow plugin, highlights key abstractions and extension points, and discuss how they are put together.
+
+If you are interested in developing or retrofitting plugins to work with workflows, I think you'll find this session interesting.
+
+The event will be on Google Hangout tomorrow. The time of the day is the same as usual office hours....
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/kohsuke">Kohsuke Kawaguchi</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/development">
+development
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/meetup">
+meetup
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/plugins">
+plugins
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/screencast">
+screencast
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/tutorial">
+tutorial
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/pipeline">
+pipeline
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/workflow">
+workflow
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/blog/2014/07/08/workflow-plugin-tutorial-writing-a-step-impl/">
+<div class="header">
+<div class="date">
+<div class="month">
+Jul
+</div>
+<div class="day">
+08
+</div>
+</div>
+<h5 class="title">
+Workflow plugin tutorial: writing a Step impl
+</h5>
+</div>
+<p class="teaser">
+The other day I was explaining how to implement a new workflow primitive to Vivek Pandey, and I captured it as a recording.
+
+
+
+
+The recording goes over how to implement the Step extension point, which is the workflow equivalent of BuildStep extension point. If you are interested in jumping on the workflow plugin hacking, this might be useful (and don't forget to get in touch...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/kohsuke">Kohsuke Kawaguchi</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/development">
+development
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/plugins">
+plugins
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/screencast">
+screencast
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/video">
+video
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/pipeline">
+pipeline
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/workflow">
+workflow
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/blog/2014/07/03/jenkins-office-hours-dotci/">
+<div class="header">
+<div class="date">
+<div class="month">
+Jul
+</div>
+<div class="day">
+03
+</div>
+</div>
+<h5 class="title">
+Jenkins Office Hours: dotCi
+</h5>
+</div>
+<p class="teaser">
+Surya walked us through the dotCI source code yesterday, and a bunch of ideas about how to reuse pieces are discussed. The recording is on YouTube, and my notes are here....
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/kohsuke">Kohsuke Kawaguchi</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/general">
+general
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/plugins">
+plugins
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/screencast">
+screencast
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/video">
+video
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/blog/2014/07/01/jenkins-office-hours-dotci/">
+<div class="header">
+<div class="date">
+<div class="month">
+Jul
+</div>
+<div class="day">
+01
+</div>
+</div>
+<h5 class="title">
+Jenkins Office Hours: dotCi
+</h5>
+</div>
+<p class="teaser">
+Tomorrow in Jenkins office hours, Surya Gaddipati will be going over DotCi, a package of features that integrates Jenkins closely with GitHub, configuration via .ci.yml file in source tree, built-in Docker support and MongoDB backend. 
+
+
+I think there's a number of interesting pieces here that could be split into individual plugins for reuse, and possible alignment with existing efforts like Script Security plugin or...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/kohsuke">Kohsuke Kawaguchi</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/general">
+general
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/news">
+news
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/plugins">
+plugins
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/blog/2014/05/30/adopt-a-plugin/">
+<div class="header">
+<div class="date">
+<div class="month">
+May
+</div>
+<div class="day">
+30
+</div>
+</div>
+<h5 class="title">
+Adopt a plugin
+</h5>
+</div>
+<p class="teaser">
+Today on IRC, I was asked how someone new to the project can get started working on Jenkins, when s/he has no particular preference or pet-peeve.
+
+
+This is a good question for which the project should have a canned answer ready, so here is one approach &mdash; adopt a plugin!
+
+
+Often, a Jenkins plugin gets developed by someone to scratch his own itch. That person shares...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/kohsuke">Kohsuke Kawaguchi</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/general">
+general
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/jobs">
+jobs
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/plugins">
+plugins
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/blog/2014/04/16/active-directory-plugin-improvements/">
+<div class="header">
+<div class="date">
+<div class="month">
+Apr
+</div>
+<div class="day">
+16
+</div>
+</div>
+<h5 class="title">
+Active Directory plugin improvements
+</h5>
+</div>
+<p class="teaser">
+One of the few plugins that I still personally maintain is Active Directory plugin. In the past few months, I've been making steady improvements in this plugin, thanks to various inputs and bug reports given to me from the ClodBees customers.
+
+
+One of the recent fixes was to get the "remember me" feature finally working for Active Directory. This requires a relatively new Jenkins 1.556,...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/kohsuke">Kohsuke Kawaguchi</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/development">
+development
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/plugins">
+plugins
+</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="post">
+<a class="body" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/blog/2014/04/04/maven-job-type-performance-improvements-in-maven-plugin-2-2/">
+<div class="header">
+<div class="date">
+<div class="month">
+Apr
+</div>
+<div class="day">
+04
+</div>
+</div>
+<h5 class="title">
+Maven job type performance improvements in Maven plugin 2.2
+</h5>
+</div>
+<p class="teaser">
+I recently had an opportunity to visit a big Jenkins user on site, and one of the things they've told me is that building projects in the Maven job type is substantially slower than doing the same with the freestyle project type.
+
+
+This is partly expected, because this job type does more for you. For example, it automatically archives your build artifacts, fingerprints all the...
+<span class="more"></span>
+</p>
+</a>
+<div class="attrs">
+<a href="https://github.com/kohsuke">Kohsuke Kawaguchi</a>
+<ul class="list-inline tags">
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/development">
+development
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/plugins">
+plugins
+</a>
+</li>
+<li>
+<a class="tag-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/releases">
+releases
+</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<!-- ending partial blogcardlist.html.haml -->
+<div>
+<nav>
+<ul class="pagination">
+<li class='47166413994480: 47166414414140: 47166419224880: 47166419635060: 47166426178320: 47166427193880: 47166427960120: 47166428498400: 47166429243300: 47166429388080: :change_frequency=&gt;"never", :lastmod=&gt;"2019-02-04", :layout=&gt;"default", :paginate_generated=&gt;true, :posts=&gt;[Awestruct::Page{ :priority=&gt;0.1, :section=&gt;"blog", :selected_tag=&gt;"plugins", :title=&gt;"Jenkins :url=&gt;"/node/tags/plugins/page/5.html"} Awestruct::Page{ Blog", Community layout=&gt;post output_path=&gt;/blog/2015/03/06/google-apps-sso-no-longer-supported-in-jenkins-openid-plugin/index.html, output_path=&gt;/blog/2015/06/22/new-wiki-url-requirement-for-plugins/index.html, output_path=&gt;/blog/2015/07/24/integrating-kubernetes-and-jenkins/index.html, output_path=&gt;/blog/2015/07/28/reinforcements-for-the-subversion-plugin/index.html, output_path=&gt;/blog/2015/08/20/upcoming-office-hour-on-kubernetes/index.html, output_path=&gt;/blog/2015/08/31/plugin-spotlight-version-column-plugin/index.html, output_path=&gt;/blog/2015/10/02/winners-of-docker-global-hack-day-3-are/index.html, output_path=&gt;/blog/2015/11/01/adopt-a-plugin/index.html, output_path=&gt;/blog/2016/04/11/jenkins-plugins-security-update/index.html, output_path=&gt;/blog/2016/04/21/dsl-plugins/index.html, page-item source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2015/2015-03-06-google-apps-sso-no-longer-supported-in-jenkins-openid-plugin.html, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2015/2015-06-22-new-wiki-url-requirement-for-plugins.md, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2015/2015-07-24-integrating-kubernetes-and-jenkins.md, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2015/2015-07-28-reinforcements-for-the-subversion-plugin.md, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2015/2015-08-20-upcoming-office-hour-on-kubernetes.md, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2015/2015-08-31-plugin-spotlight-version-column-plugin.md, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2015/2015-10-02-winners-of-docker-global-hack-day-3-are.html, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2015/2015-11-01-adopt-a-plugin.md, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2016/2016-04-11-jenkins-plugins-security-update.md, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2016/2016-04-21-dsl-plugins.adoc, {:__is_layout=&gt;false, }, }],'>
+<a class="page-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/plugins/page/5.html">
+&laquo;
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="..">
+1
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../page/2.html">
+2
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../page/3.html">
+3
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../page/4.html">
+4
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../page/5.html">
+5
+</a>
+</li>
+<li class="active page-item">
+<a class="page-link" href="../page/6.html">
+6
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../page/7.html">
+7
+</a>
+</li>
+<li class="page-item">
+<a class="page-link" href="../page/8.html">
+8
+</a>
+</li>
+<li class='47166413266680: 47166419012000: 47166419184440: 47166419569260: 47166425917900: 47166426072580: 47166426387640: 47166427880000: 47166429091620: 47166429198280: :change_frequency=&gt;"never", :lastmod=&gt;"2019-02-04", :layout=&gt;"default", :paginate_generated=&gt;true, :posts=&gt;[Awestruct::Page{ :priority=&gt;0.1, :section=&gt;"blog", :selected_tag=&gt;"plugins", :title=&gt;"Jenkins :url=&gt;"/node/tags/plugins/page/7.html"} Awestruct::Page{ Blog", Community layout=&gt;post output_path=&gt;/blog/2011/03/03/updated-usage-stats-available/index.html, output_path=&gt;/blog/2011/05/12/ruby-plugins-hack-session-5-12-2011/index.html, output_path=&gt;/blog/2011/06/08/building-a-software-diamond-with-jenkins/index.html, output_path=&gt;/blog/2011/11/15/the-beginning-of-a-new-era-ruby-plugins-now-a-reality/index.html, output_path=&gt;/blog/2012/01/04/building-jenkins-plugins-with-gradle/index.html, output_path=&gt;/blog/2012/12/13/office-hours-next-week-metadata-plugin/index.html, output_path=&gt;/blog/2013/06/21/reducing-the-of-threads-in-jenkins-ssh-slaves/index.html, output_path=&gt;/blog/2013/07/01/office-hours-this-week-git-plugin-refactoring/index.html, output_path=&gt;/blog/2013/09/09/loader-io-plugin-developer-interview/index.html, output_path=&gt;/blog/2013/09/23/literate-builds-wtf/index.html, page-item source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2011/2011-03-03-updated-usage-stats-available.md, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2011/2011-05-12-ruby-plugins-hack-session-5-12-2011.md, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2011/2011-06-08-building-a-software-diamond-with-jenkins.md, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2011/2011-11-15-the-beginning-of-a-new-era-ruby-plugins-now-a-reality.md, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2012/2012-01-04-building-jenkins-plugins-with-gradle.md, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2012/2012-12-13-office-hours-next-week-metadata-plugin.html, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2013/2013-06-21-reducing-the-of-threads-in-jenkins-ssh-slaves.html, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2013/2013-07-01-office-hours-this-week-git-plugin-refactoring.md, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2013/2013-09-09-loader-io-plugin-developer-interview.html, source_path=&gt;/Users/v.spiridonov/Code/jenkins.io/content/blog/2013/2013-09-23-literate-builds-wtf.md, {:__is_layout=&gt;false, }, }],'>
+<a class="page-link" href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node/tags/plugins/page/7.html">
+&raquo;
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="col-md-4 events vertical">
+<div class="content">
+<!-- starting partial events.html.haml -->
+<div class="item-list">
+<ul class="ji-date-list ji-item-list">
+</ul>
+</div>
+
+<!-- ending partial events.html.haml -->
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/assets/bower/anchor-js/anchor.min.js"></script>
+<script src="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/assets/bower/tether/js/tether.min.js"></script>
+<script src="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/assets/bower/bootstrap/js/bootstrap.min.js"></script>
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+<p class="box">
+<a href="https://github.com/jenkins-infra/jenkins.io/edit/master/content//node/index.html.haml" title="Edit /node/index.html.haml on GitHub">
+Improve this page
+</a>
+|
+<a href="https://github.com/jenkins-infra/jenkins.io/commits/master/content//node/index.html.haml" title="View /node/index.html.haml history on GitHub">
+Page history
+</a>
+</p>
+<div class="license-box">
+<div id="creativecommons">
+<a href="https://creativecommons.org/licenses/by-sa/4.0/">
+<p>
+<img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png">
+</p>
+</a>
+<p>
+The content driving this site is licensed under the Creative
+Commons Attribution-ShareAlike 4.0 license.
+</p>
+</div>
+</div>
+</div>
+<div class="links col-md-8">
+<div class="container">
+<div class="row">
+<div class="area col-md-3">
+<div class="div-mar">
+<h5>Resources</h5>
+<ul class="resources">
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/events">
+Events
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/doc">
+Documentation
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/node">
+Blog
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="area col-md-3">
+<div class="div-mar">
+<h5>Solutions</h5>
+<ul>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/android">
+Android
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/c">
+C/C++
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/docker">
+Docker
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/embedded">
+Embedded
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/github">
+GitHub
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/java">
+Java
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/php">
+PHP
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/pipeline">
+Continuous Delivery
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/python">
+Python
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/solutions/ruby">
+Ruby
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="area col-md-3">
+<div class="div-mar">
+<h5>Project</h5>
+<ul class="project">
+<li>
+<a href="https://issues.jenkins-ci.org">
+Issue tracker
+</a>
+</li>
+<li>
+<a href="https://wiki.jenkins.io">
+Wiki
+</a>
+</li>
+<li>
+<a href="https://github.com/jenkinsci">
+GitHub
+</a>
+</li>
+<li>
+<a href="https://ci.jenkins.io">
+Jenkins on Jenkins
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="area col-md-3">
+<div class="div-mar">
+<h5>Community</h5>
+<ul class="community">
+<li>
+<a href="https://groups.google.com/forum/#!forum/jenkinsci-users">
+Users mailing list
+</a>
+</li>
+<li>
+<a href="https://groups.google.com/forum/#!forum/jenkinsci-dev">
+Developers mailing list
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/sigs">
+Special Interest Groups
+</a>
+</li>
+<li>
+<a href="https://twitter.com/jenkinsci">
+Twitter
+</a>
+</li>
+<li>
+<a href="https://reddit.com/r/jenkinsci">
+Reddit
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/merchandise">
+Merchandise
+</a>
+</li>
+<li>
+<a href="https://sp1r.github.io/jenkins.io/sigs-mailing-lists-list/awards">
+Awards
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+ga('create', 'UA-000000-0', 'auto');
+ga('send', 'pageview');
+ga('set', 'anonymizeIp', true);
+
+</script>
+
+<script>
+  !function(d,s,id) {
+    var js, fjs=d.getElementsByTagName(s)[0];
+    if (!d.getElementById(id)) {
+      js = d.createElement(s);
+      js.id=id;
+      js.src="//platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js,fjs);
+    }
+  }(document,"script","twitter-wjs");
+</script>
+</body>
+</html>
